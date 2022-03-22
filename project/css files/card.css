@@ -1,0 +1,23 @@
+button{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+button:hover{
+    background-color: black;
+    color: purple;
+}
+.card{
+    background-color: black;
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+}
+.minerals1{
+    width: 100%;
+    padding: 20px;
+}
+img{
+    width: 100%;
+}

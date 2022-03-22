@@ -1,0 +1,155 @@
+@import"css files\card.css";
+@media  screen and (max-width:600px) {
+    
+body{
+    background-color:rgb(173, 95, 95);
+    font-size: 25px;
+}
+    
+.container{
+    display: Grid;
+    width:100%;
+    height: 100%;
+    grid-template-columns:repeat(4 1fr);
+    grid-template-rows:repeat(3 1fr);
+    grid-gap: 2px;
+    grid-template-areas: 
+    "hd"
+    "art"
+    "ft";
+    border:2px solid black;
+    justify-content: center;
+    margin: auto;
+}
+}
+
+
+.box{
+   display:flex;
+   flex-wrap: wrap;
+    border: 1px solid black;
+}
+img{
+    width:300px; 
+    height: 200px;
+    align-items:left;
+}
+
+#header{
+    grid-area: hd;
+    background-color:rgb(173, 95, 95);
+    font-size: 25px;
+    line-height: 1.5em;
+    font-style: italic;
+}
+#article{
+    grid-area: art;
+    align-items: left;
+}
+#footer{
+    grid-area: ft;
+    font-size: 25px;
+    text-decoration: none;
+}
+#typography{
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(35, 49, 6);
+    width: 80%;
+    line-height: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.active{
+    background-color: red;
+    color: black;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: white;
+    color: red;
+}
+
+.fa{
+    padding: 15px;
+    text-align: center;
+    margin: 5px 2px;
+    width: 50px;
+    font-size: 40px;
+
+}
+.fa-facebook{
+    background-color: blue;
+    color: white;
+}
+.fa-twitter{
+    background-color: #55acee;
+}
+.fa-linkedin{
+    background: #007bb5;  
+  color: white;  
+}
+.fa-instagram{
+    background: red;  
+  color: white;
+}
+
+@media screen and (min-width:601px) and (max-width:1000px){
+
+    body{
+        background-color:rgb(173, 95, 95);
+        font-size: 25px;
+    }
+
+    .container{
+        display: Grid;
+        width:100%;
+        height: 100%;
+        grid-template-columns:500px 500px;
+        grid-template-rows:repeat(3 1fr);
+        grid-gap: 2px;
+        grid-template-areas: 
+        "hd hd"
+        "art art"
+        "ft ft";
+        border:2px solid black;
+    }
+    
+}
+
+@media screen and (min-width:1001px){
+
+    body{
+        background-color:rgb(173, 95, 95);
+        font-size: 25px;
+    }
+
+    .container{
+        display: Grid;
+        width:100%;
+        height: 100%;
+        grid-template-columns:repeat(4 500px);
+        grid-template-rows:repeat(3 1fr);
+        grid-gap: 2px;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "art art art art"
+        "ft ft ft ft";
+        border:2px solid black;
+    }
+}
